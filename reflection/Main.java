@@ -8,6 +8,7 @@ package reflection;
 import java.lang.*;
 import java.util.Properties;
 import java.io.*;
+import java.lang.reflect.*;
 
 /**
  *
@@ -21,7 +22,7 @@ public class Main {
         Properties properties = new Properties();
         try {
             properties.load(
-            new FileInputStream("properties"));
+            new FileInputStream("src/reflection/factory.properties"));
         } catch (IOException e) {e.printStackTrace();}
         try{
         //luetaan toteuttava tehdas properties-tiedostosta
