@@ -13,6 +13,6 @@ public class Main {
     public static void main(String[] args) {
         ITarget suomenkielinenOlio = new Adapter(new Adaptee());
         suomenkielinenOlio.tervehdi();
-        // suomenkielinen olio tulostaa adapter patternin avuksi tervehdyksen espanjaksi
+        // suomenkielinen olio tulostaa adapter patternin avulla tervehdyksen espanjaksi
     }
 }
