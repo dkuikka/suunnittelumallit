@@ -32,10 +32,15 @@ public class Kello implements Cloneable {
         } else if (mViisari.getTime() < 59) {
             sViisari.tick();
             mViisari.tick();
-        } else if (hViisari.getTime() < 23) {
+        } else if (hViisari.getTime() < 22) {
             sViisari.tick();
             mViisari.tick();
             hViisari.tick();
+        }
+        else if (hViisari.getTime() == 23) {
+            mViisari.tick();
+            sViisari.tick();
+            hViisari.reset();
         }
         System.out.println("Kello on: " + hViisari.getTime() + " : " + mViisari.getTime() + " : " +  sViisari.getTime());
     }

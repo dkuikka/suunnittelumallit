@@ -24,12 +24,16 @@ public class Viisari {
         if (point < 59) {
             point++;
         } else {
-            point = 0;
+            reset();
         }
     }
     
     public int getTime() {
         return point;
+    }
+    
+    public void reset() {
+        this.point = 0;
     }
     
 }

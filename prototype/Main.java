@@ -21,11 +21,9 @@ public class Main {
             System.out.println("kello2 null");
         }  
         
-    
         int i = 0;
         while (i < 60) {
             kello1.tick();
-            
             kello2.tick();
             i++;
         }
